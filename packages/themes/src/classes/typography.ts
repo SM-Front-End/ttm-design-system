@@ -1,97 +1,79 @@
 import { typography } from "../variables";
 
-export const heading = {
-  "4xl": {
-    fontSize: typography.fontSize[60],
-    fontWeight: typography.fontWeight[700],
-    lineHeight: typography.lineHeight[100],
-  },
-  "3xl": {
-    fontSize: typography.fontSize[48],
-    fontWeight: typography.fontWeight[700],
-    lineHeight: typography.lineHeight[100],
-  },
-  "2xl": {
-    fontSize: typography.fontSize[36],
-    fontWeight: typography.fontWeight[700],
-    lineHeight: typography.lineHeight[120],
-  },
-  xl: {
-    fontSize: typography.fontSize[30],
-    fontWeight: typography.fontWeight[700],
-    lineHeight: typography.lineHeight[133],
-  },
-  lg: {
-    fontSize: typography.fontSize[24],
-    fontWeight: typography.fontWeight[700],
-    lineHeight: typography.lineHeight[133],
-  },
-  md: {
-    fontSize: typography.fontSize[20],
-    fontWeight: typography.fontWeight[700],
-    lineHeight: typography.lineHeight[120],
-  },
-  sm: {
-    fontSize: typography.fontSize[16],
-    fontWeight: typography.fontWeight[700],
-    lineHeight: typography.lineHeight[120],
-  },
-  xs: {
-    fontSize: typography.fontSize[14],
-    fontWeight: typography.fontWeight[700],
-    lineHeight: typography.lineHeight[120],
-  },
+const baseStyle = {
+  lineHeight: typography.lineHeight[187],
+  letterSpacing: typography.letterSpacing["Negative03"],
 };
 
 export const text = {
-  "6xl": {
-    fontSize: typography.fontSize[60],
-    fontWeight: typography.fontWeight[400],
-    lineHeight: typography.lineHeight[150],
-  },
-  "5xl": {
-    fontSize: typography.fontSize[48],
-    fontWeight: typography.fontWeight[400],
-    lineHeight: typography.lineHeight[150],
-  },
-  "4xl": {
-    fontSize: typography.fontSize[36],
-    fontWeight: typography.fontWeight[400],
-    lineHeight: typography.lineHeight[150],
-  },
-  "3xl": {
-    fontSize: typography.fontSize[30],
-    fontWeight: typography.fontWeight[400],
-    lineHeight: typography.lineHeight[150],
-  },
-  "2xl": {
+  h1: {
+    ...baseStyle,
     fontSize: typography.fontSize[24],
-    fontWeight: typography.fontWeight[400],
-    lineHeight: typography.lineHeight[150],
+    fontWeight: typography.fontWeight[700],
   },
-  xl: {
+  h2: {
+    ...baseStyle,
+    fontSize: typography.fontSize[22],
+    fontWeight: typography.fontWeight[700],
+  },
+  h3: {
+    ...baseStyle,
     fontSize: typography.fontSize[20],
-    fontWeight: typography.fontWeight[400],
-    lineHeight: typography.lineHeight[150],
+    fontWeight: typography.fontWeight[700],
   },
-  lg: {
+  h4: {
+    ...baseStyle,
+    fontSize: typography.fontSize[18],
+    fontWeight: typography.fontWeight[700],
+  },
+  h5: {
+    ...baseStyle,
+    fontSize: typography.fontSize[16],
+    fontWeight: typography.fontWeight[700],
+  },
+  h6: {
+    ...baseStyle,
+    fontSize: typography.fontSize[15],
+    fontWeight: typography.fontWeight[700],
+  },
+  h7: {
+    ...baseStyle,
+    fontSize: typography.fontSize[14],
+    fontWeight: typography.fontWeight[700],
+  },
+  h8: {
+    ...baseStyle,
+    fontSize: typography.fontSize[13],
+    fontWeight: typography.fontWeight[700],
+  },
+  body1: {
+    ...baseStyle,
     fontSize: typography.fontSize[18],
     fontWeight: typography.fontWeight[400],
-    lineHeight: typography.lineHeight[150],
   },
-  md: {
+  body2: {
+    ...baseStyle,
     fontSize: typography.fontSize[16],
     fontWeight: typography.fontWeight[400],
-    lineHeight: typography.lineHeight[150],
   },
-  sm: {
+  body3: {
+    ...baseStyle,
+    fontSize: typography.fontSize[15],
+    fontWeight: typography.fontWeight[400],
+  },
+  body4: {
+    ...baseStyle,
     fontSize: typography.fontSize[14],
     fontWeight: typography.fontWeight[400],
-    lineHeight: typography.lineHeight[150],
   },
-  xs: {
+  body5: {
+    ...baseStyle,
+    fontSize: typography.fontSize[13],
+    fontWeight: typography.fontWeight[400],
+  },
+  body6: {
+    ...baseStyle,
     fontSize: typography.fontSize[12],
     fontWeight: typography.fontWeight[400],
-    lineHeight: typography.lineHeight[150],
   },
 };
