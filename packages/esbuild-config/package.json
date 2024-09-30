@@ -1,0 +1,11 @@
+{
+  "name": "@sm/esbuild-config",
+  "packageManager": "yarn@4.5.0",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "esbuild": "0.16.17"
+  }
+}
