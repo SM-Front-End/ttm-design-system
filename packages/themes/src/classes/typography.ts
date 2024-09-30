@@ -5,7 +5,7 @@ const baseStyle = {
   letterSpacing: typography.letterSpacing["Negative03"],
 };
 
-export const text = {
+export const variant = {
   h1: {
     ...baseStyle,
     fontSize: typography.fontSize[24],

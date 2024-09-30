@@ -15,10 +15,11 @@ export const Text = React.forwardRef(
       // background,
       children,
       fontSize,
+      variant,
     } = props;
     const match = color.match(/([a-zA-Z]+)(\d+)/)!;
-    const $color = match[0] as Color;
-    const $brightness = match[1] as string;
+    const $color = match[1] as Color;
+    const $brightness = match[2] as string;
 
     return React.createElement(
       as,
@@ -31,13 +32,14 @@ export const Text = React.forwardRef(
             extractSprinkleProps(props, Array.from(StyleSprinkles.properties)),
           ),
           textStyle({
-            fontSize,
+            variant,
           }),
           props.className,
         ]),
         style: {
           //@ts-ignore
           color: color && vars.colors.$scale?.[$color]?.[$brightness],
+          fontSize,
           // background: background && vars.colors.$scale?.[background]?.[100],
           ...props.style,
         },
