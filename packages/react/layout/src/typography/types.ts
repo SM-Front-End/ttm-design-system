@@ -4,7 +4,7 @@ import { CSSProperties } from "@vanilla-extract/css";
 
 export type TextProps = AsElementProps &
   StyleProps & {
-    fontSize: number;
+    fontSize?: number;
     variant?: keyof typeof classes.typography.variant;
     align?: CSSProperties["textAlign"];
     casing?: CSSProperties["textTransform"];

@@ -15,7 +15,7 @@ export const Text = React.forwardRef(
       // background,
       children,
       fontSize,
-      variant,
+      variant = "body2",
     } = props;
     const match = color.match(/([a-zA-Z]+)(\d+)/)!;
     const $color = match[1] as Color;

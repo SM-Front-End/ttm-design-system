@@ -15,6 +15,14 @@ export default {
       options: Object.keys(classes.typography.variant),
       control: "select",
     },
+    fontSize: {
+      control: {
+        type: "number",
+      },
+    },
+  },
+  args: {
+    variant: "body2",
   },
 } as Meta<typeof Text>;
 
