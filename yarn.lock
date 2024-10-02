@@ -1669,6 +1669,28 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ttm/react-components-segmented-controls@workspace:^, @ttm/react-components-segmented-controls@workspace:packages/react/components/SegmentedControls":
+  version: 0.0.0-use.local
+  resolution: "@ttm/react-components-segmented-controls@workspace:packages/react/components/SegmentedControls"
+  dependencies:
+    "@ttm/esbuild-config": "workspace:^"
+    "@ttm/themes": "workspace:^"
+    "@types/react": "npm:^18.3.8"
+    "@types/react-dom": "npm:^18.3.0"
+    "@vanilla-extract/css": "npm:^1.15.5"
+    "@vanilla-extract/esbuild-plugin": "npm:^2.3.10"
+    "@vanilla-extract/recipes": "npm:^0.5.5"
+    "@vanilla-extract/sprinkles": "npm:^1.6.3"
+    clsx: "npm:^2.1.1"
+    react: "npm:^18.3.1"
+    react-dom: "npm:^18.3.1"
+    typescript: "npm:^5.2.2"
+  peerDependencies:
+    "@ttm/themes": "workspace:^"
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
 "@ttm/react-hooks-button@workspace:packages/react/hooks/button":
   version: 0.0.0-use.local
   resolution: "@ttm/react-hooks-button@workspace:packages/react/hooks/button"
@@ -1699,6 +1721,7 @@ __metadata:
     "@storybook/test": "npm:8.3.4"
     "@ttm/react-components-avatar": "workspace:^"
     "@ttm/react-components-layout": "workspace:^"
+    "@ttm/react-components-segmented-controls": "workspace:^"
     "@ttm/themes": "workspace:^"
     "@vitejs/plugin-react": "npm:^4.3.2"
     gh-pages: "npm:^6.1.1"

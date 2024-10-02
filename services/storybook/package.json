@@ -26,7 +26,8 @@
     "deploy": "gh-pages -d storybook-static"
   },
   "dependencies": {
-    "@ttm/react-components-avatar": "workspace:^"
+    "@ttm/react-components-avatar": "workspace:^",
+    "@ttm/react-components-segmented-controls": "workspace:^"
   },
   "homepage": "https://sm-front-end.github.io/ttm-design-system/"
 }
