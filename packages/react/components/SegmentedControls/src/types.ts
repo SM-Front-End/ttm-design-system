@@ -1,12 +1,14 @@
+import { ComponentProps, InputHTMLAttributes, ReactElement } from "react";
+import { SegmentedControlsOption } from "./SegmentedControlsOption";
+
+type SegmentedControlsOptionElement = ReactElement<
+  ComponentProps<typeof SegmentedControlsOption>
+>;
+
 export type SegmentedControlsProps = {
-  size?: "xl" | "l" | "m" | "s" | "t";
-  radius?: number;
-  name?: string;
-  source?: string;
-  backgroundColor?: string;
-  svg?: React.ReactNode;
-  email?: string;
-  className?: string;
-  onPress?: () => void;
-  onLongPress?: () => void;
-};
+  children: SegmentedControlsOptionElement | SegmentedControlsOptionElement[];
+  shape?: "rectangle" | "round";
+} & Pick<
+  InputHTMLAttributes<HTMLInputElement>,
+  "className" | "disabled" | "value" | "defaultValue" | "onChange" | "name"
+>;
